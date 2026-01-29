@@ -1,77 +1,75 @@
 <!doctype html>
 <html lang="en-US">
-<body>
-  
   <head>
     <meta charset="utf-8" />
     <title>Coffee Order Form</title>
   </head>
-
-  <h1>Coffee Order</h1>
   
-  <form action="https://www.w3schools.com/action_page.php" method="get">
-
-    <fieldset>
-      <legend><strong>Customer Info:</strong></legend>
-      <p>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="customer_name" />
-      </p>
-      <p>
-        <label for="mail">Email Address:</label>
-        <input type="email" id="mail" name="customer_email" />
-      </p>
-    </fieldset>
-
-    <fieldset>
-      <legend><strong>Choose your coffee type:</strong></legend>
-      <p>
-        <select id="coffee" name="user-coffee">
-          <option value="coffee">Latte</option>
-          <option value="coffee">Cappuccino</option>
-          <option value="coffee">Americano</option>
-          <option value="coffee">Espresso</option>
-        </select>
-      </p>
-    </fieldset>
+  <body>
+    <h1>Coffee Order</h1>
   
-    <fieldset>
-      <legend><strong>Choose your coffee size:</strong></legend>
-      <p>
-        <input type="radio" id="small" name="coffee_size" value="small">
-        <label for="small">Small</label><br>
-        <input type="radio" id="medium" name="coffee_size" value="medium">
-        <label for="medium">Medium</label><br>
-        <input type="radio" id="large" name="coffee_size" value="large">
-        <label for="large">Large</label>
-      </p>
-    </fieldset>
+    <form action="https://www.w3schools.com/action_page.php" method="get">
+      <fieldset>
+        <legend><strong>Customer Info:</strong></legend>
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="customer_name" />
+        </p>
+        <p>
+          <label for="mail">Email Address:</label>
+          <input type="email" id="mail" name="customer_email" />
+        </p>
+      </fieldset>
   
-    <fieldset>
-      <legend><strong>Extras:</strong></legend>
+      <fieldset>
+        <legend><strong>Choose your coffee type:</strong></legend>
+        <p>
+          <select id="coffee" name="user-coffee">
+            <option value="latte">Latte</option>
+            <option value="cappuccino">Cappuccino</option>
+            <option value="americano">Americano</option>
+            <option value="espresso">Espresso</option>
+          </select>
+        </p>
+      </fieldset>
+    
+      <fieldset>
+        <legend><strong>Choose your coffee size:</strong></legend>
+        <p>
+          <input type="radio" id="small" name="coffee_size" value="small">
+          <label for="small">Small</label><br>
+          <input type="radio" id="medium" name="coffee_size" value="medium">
+          <label for="medium">Medium</label><br>
+          <input type="radio" id="large" name="coffee_size" value="large">
+          <label for="large">Large</label>
+        </p>
+      </fieldset>
+    
+      <fieldset>
+        <legend><strong>Extras:</strong></legend>
+        <p>
+          <input type="checkbox" id="extra_1" name="extra_WE" value="whipped cream" />
+          <label for="extra_1">Whipped Cream</label>
+        </p>
+        <p>
+          <input type="checkbox" id="extra_2" name="extra_ES" value="espresso shot" />
+          <label for="extra_2">Espresso Shot</label>
+        </p>
+        <p>
+          <input type="checkbox" id="extra_3" name="extra_AM" value="almond milk" />
+          <label for="extra_3">Almond Milk</label>
+        </p>
+      </fieldset>
+  
       <p>
-        <input type="checkbox" id="extra_1" name="extra_WE" value="whipped cream" />
-        <label for="taste_1">Whipped Cream</label>
+        <label for="msg"><strong>Additional Instructions:</strong></label>
+        <textarea id="msg" name="customer_message"></textarea>
       </p>
-      <p>
-        <input type="checkbox" id="extra_2" name="extra_ES" value="espresso shot" />
-        <label for="taste_2">Espresso Shot</label>
+  
+      <p class="button">
+        <button type="submit">Submit</button>
       </p>
-      <p>
-        <input type="checkbox" id="extra_3" name="extra_AM" value="almond milk" />
-        <label for="taste_3">Almond Milk</label>
-      </p>
-    </fieldset>
+    </form>
 
-    <p>
-      <label for="msg"><strong>Additional Instructions:</strong></label>
-      <textarea id="msg" name="customer_message"></textarea>
-    </p>
-
-    <p class="button">
-      <button type="submit">Submit</button>
-    </p>
-  </form>
-
-</body>
+  </body>
 </html>
