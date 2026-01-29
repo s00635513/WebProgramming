@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en-US">
+<body>
+  
+  <head>
+    <meta charset="utf-8" />
+    <title>Coffee Order</title>
+  </head>
+
+  <h1>Coffee Order Form</h1>
+  
+  <form action="/my-handling-form-page" method="post">
+    <p>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="customer_name" />
+    </p>
+    <p>
+      <label for="mail">Email Address:</label>
+      <input type="email" id="mail" name="user_email" />
+    </p>
+
+    <fieldset>
+      <legend>Choose your coffee type:</legend>
+      <p>
+        <select id="coffee" name="user-coffee">
+          <option value="coffee">Latte</option>
+          <option value="coffee">Cappuccino</option>
+          <option value="coffee">Americano</option>
+          <option value="coffee">Espresso</option>
+        </select>
+      </p>
+    </fieldset>
+  
+    <fieldset>
+      <legend>Choose your coffee size:</legend>
+      <p>
+        <input type="radio" id="small" name="coffee_size" value="small">
+        <label for="small">Small</label><br>
+        <input type="radio" id="medium" name="coffee_size" value="medium">
+        <label for="medium">Medium</label><br>
+        <input type="radio" id="large" name="coffee_size" value="large">
+        <label for="large">Large</label>
+      </p>
+    </fieldset>
+  
+    <fieldset>
+      <legend>Extras:</legend>
+      <p>
+        <input type="checkbox" id="taste_1" name="taste_cherry" value="cherry" />
+        <label for="taste_1">I like cherry</label>
+      </p>
+      <p>
+        <input type="checkbox" id="taste_2" name="taste_banana" value="banana" />
+        <label for="taste_2">I like banana</label>
+      </p>
+      <p>
+        <input type="checkbox" id="taste_2" name="taste_banana" value="banana" />
+        <label for="taste_2">I like banana</label>
+      </p>
+    </fieldset>
+  </form>
+
+</body>
+</html>
