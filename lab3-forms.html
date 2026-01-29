@@ -10,13 +10,15 @@
   <h1>Coffee Order Form</h1>
   
   <form action="/my-handling-form-page" method="post">
+
+    <h2>Customer Info:</h2>
     <p>
       <label for="name">Name:</label>
       <input type="text" id="name" name="customer_name" />
     </p>
     <p>
       <label for="mail">Email Address:</label>
-      <input type="email" id="mail" name="user_email" />
+      <input type="email" id="mail" name="customer_email" />
     </p>
 
     <fieldset>
@@ -46,18 +48,27 @@
     <fieldset>
       <legend>Extras:</legend>
       <p>
-        <input type="checkbox" id="taste_1" name="taste_cherry" value="cherry" />
-        <label for="taste_1">I like cherry</label>
+        <input type="checkbox" id="extra_1" name="extra_WE" value="whipped cream" />
+        <label for="taste_1">Whipped Cream</label>
       </p>
       <p>
-        <input type="checkbox" id="taste_2" name="taste_banana" value="banana" />
-        <label for="taste_2">I like banana</label>
+        <input type="checkbox" id="extra_2" name="extra_ES" value="espresso shot" />
+        <label for="taste_2">Espresso Shot</label>
       </p>
       <p>
-        <input type="checkbox" id="taste_2" name="taste_banana" value="banana" />
-        <label for="taste_2">I like banana</label>
+        <input type="checkbox" id="extra_3" name="extra_AM" value="almond milk" />
+        <label for="taste_3">Almond Milk</label>
       </p>
     </fieldset>
+
+    <p>
+      <label for="msg">Additional Instructions:</label>
+      <textarea id="msg" name="customer_message"></textarea>
+    </p>
+
+    <p class="button">
+      <button type="submit">Submit</button>
+    </p>
   </form>
 
 </body>
