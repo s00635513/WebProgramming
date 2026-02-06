@@ -1,1 +1,33 @@
+body {
+  background-color: lightpurple;
+  font-family: sans-serif;
+}
 
+h1 {
+  color: pink;
+  text-align: center;
+}
+
+p {
+  color: navyblue;
+  padding: 10px;
+}
+
+li {
+  color: rebeccapurple;
+}
+
+a {
+  color: blue;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.styled-box {
+  border: 5px solid orange;
+  background-color: lightgray;
+  padding: 15px;
+  text-align: center;
+}
