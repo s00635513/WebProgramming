@@ -9,7 +9,8 @@
     body {
       font-family: sans-serif;
       display: grid;
-
+      background-color: cream;
+      color: black;
       grid-template-areas:
         "header"
         "nav"
@@ -22,73 +23,73 @@
 
     header {
       grid-area: header;
-      background-color:
-      color:
-      text-align:
-      padding:
+      background-color: orange;
+      color: black;
+      text-align: center;
+      padding: 2rem;
     }
 
     nav {
       grid-area: nav;
-      background-color:
-      padding:
+      background-color: pink;
+      padding: 10rem;
     }
 
     main {
       grid-area: main;
-      padding:
+      padding: 10rem;
     }
 
     footer {
       grid-area: footer;
-      background-color:
-      color:
-      text-align:
-      padding:
+      background-color: pink;
+      color: black;
+      text-align: center;
+      padding: 5rem:
     }
 
     nav ul {
-      list-style:
-      display:
-      justify-content:
-      gap:
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 5rem;
     }
 
     nav a {
-      text-decoration:
-      color:
-      font-weight:
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
     }
 
     nav a:hover {
-      color:
+      color: blue;
     }
 
     .flex-container {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
-      gap:
+      gap: 5rem;
       margin-top: 20px
     }
 
     .flex-item {
-      background-color:
-      padding: 20px;
-      border-radius:
-      box-shadow:
+      background-color: pink;
+      padding: 10rem;
+      border-radius: 5px;
+      box-shadow: 5px 5px pink;
       min-width: 150px;
       text-align: center;
     }
 
     @media (max-width: 500px) {
       nav ul {
-        flex-direction:
-        align-items:
+        flex-direction: column;
+        align-items: center;
       }
       .flex-container {
-        flex-direction:
-        align-items:
+        flex-direction: column;
+        align-items: center;
       }
     }
   </style>
