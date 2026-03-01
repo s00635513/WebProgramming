@@ -9,8 +9,8 @@
     body {
       font-family: sans-serif;
       display: grid;
-      background-color: cream;
-      color: black;
+      background-color: black;
+      color: SaddleBrown;
       grid-template-areas:
         "header"
         "nav"
@@ -18,21 +18,21 @@
         "footer";
 
       grid-template-rows: auto auto 1fr auto;
-      min-height: 100vh;
+      min-height: 70vh;
     }
 
     header {
       grid-area: header;
-      background-color: orange;
-      color: black;
+      background-color: BurlyWood;
+      color: SaddleBrown;
       text-align: center;
-      padding: 2rem;
+      padding: 7rem;
     }
 
     nav {
       grid-area: nav;
       background-color: pink;
-      padding: 10rem;
+      padding: 5rem;
     }
 
     main {
@@ -43,7 +43,7 @@
     footer {
       grid-area: footer;
       background-color: pink;
-      color: black;
+      color: SaddleBrown;
       text-align: center;
       padding: 5rem:
     }
@@ -57,7 +57,7 @@
 
     nav a {
       text-decoration: none;
-      color: black;
+      color: SaddleBrown;
       font-weight: bold;
     }
 
@@ -77,12 +77,12 @@
       background-color: pink;
       padding: 10rem;
       border-radius: 5px;
-      box-shadow: 5px 5px pink;
+      box-shadow: 7px 7px BurlyWood;
       min-width: 150px;
       text-align: center;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 100px) {
       nav ul {
         flex-direction: column;
         align-items: center;
@@ -122,4 +122,4 @@
     <p>&copy; 2025 Java Haven. All Rights Reserved.</p>
   </footer>
 </body>
-</html>
+</html>>
