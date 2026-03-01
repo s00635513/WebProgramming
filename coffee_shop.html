@@ -5,6 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Java Haven</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: gird;
+
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer"
+
+      grid-template-rows: auto auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    .header {
+      grid-area: header;
+    }
+
+    .nav {
+      grid-area: nav;
+    }
+
+    .main-content {
+      grid-area: main;
+    }
+
+    .footer {
+      grid-area: footer;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 20px
+    }
+
+    .flex-item {
+      padding: 20px;
+      width: 150px;
+      text-align: center;
+    }
+
+    body {
+      background-color:
+      color:
+    }
+
+    .header {
+      background-color:
+      color:
+      text-align:
+      padding:
+    }
+
+    
+  </style>
 </head>
 <body>
   <header class="header">
